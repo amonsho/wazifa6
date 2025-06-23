@@ -1,9 +1,12 @@
 def fibonachi(n):
-    if n==0:
-        return 0
-    elif n==1:
-        return 1
-    else:
-       return fibonachi(n-1)+fibonachi(n-2)
+    f1=0
+    f2=1
+    i=1
+    while i<n:
+      f3=f1+f2
+      f1=f2
+      f2=f3
+      i+=1
+    return f2
     
 print(fibonachi(6))
